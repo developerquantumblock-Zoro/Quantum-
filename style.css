@@ -57,19 +57,7 @@ h1, h2, h3 {
   justify-content: center;
 }
 
-/* Outer quantum ring */
-.logo-orbit {
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  border: 1px solid rgba(0,229,255,0.35);
 
-  background: radial-gradient(
-    circle at center,
-    rgba(0,229,255,0.12),
-    rgba(0,229,255,0.04),
-    transparent 70%
-  );
 
   box-shadow:
     0 0 35px rgba(0,229,255,0.25),
@@ -289,4 +277,5 @@ footer .small {
   }
 }
 }
+
 
