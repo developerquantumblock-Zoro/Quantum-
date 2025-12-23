@@ -45,11 +45,11 @@ h1, h2, h3 {
   gap: 20px;
 }
 
-/* ================= VIDEO LOGO (INNER CORE ONLY – BIGGER CIRCLE) ================= */
+/* ================= VIDEO LOGO (INNER CORE ONLY – 240%) ================= */
 
 .logo-wrap {
-  width: 160px;        /* ⬆ BIGGER */
-  height: 160px;       /* ⬆ BIGGER */
+  width: 160px;
+  height: 160px;
   margin-bottom: 55px;
 
   border-radius: 50%;
@@ -64,12 +64,12 @@ h1, h2, h3 {
     0 0 70px rgba(0,229,255,0.3);
 }
 
-/* Crop stays the same so outer ring remains hidden */
+/* 🔥 VIDEO ZOOMED TO 240% */
 .logo-video {
-  width: 140%;
-  height: 140%;
+  width: 240%;
+  height: 240%;
   object-fit: cover;
-  transform: translate(-20%, -20%);
+  transform: translate(-70%, -70%);
 }
 
 /* ================= BUTTONS ================= */
@@ -79,6 +79,7 @@ h1, h2, h3 {
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
+  justify-content: center;
 }
 
 .primary {
@@ -225,15 +226,16 @@ footer .small {
 
 @media (max-width: 768px) {
   .logo-wrap {
-    width: 120px;       /* ⬆ BIGGER ON MOBILE */
-    height: 120px;      /* ⬆ BIGGER ON MOBILE */
+    width: 120px;
+    height: 120px;
     margin-bottom: 35px;
   }
 
+  /* 🔥 Mobile zoom slightly stronger */
   .logo-video {
-    width: 145%;
-    height: 145%;
-    transform: translate(-22%, -22%);
+    width: 260%;
+    height: 260%;
+    transform: translate(-80%, -80%);
   }
 
   .hero h1 {
