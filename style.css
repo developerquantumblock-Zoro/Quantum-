@@ -48,9 +48,9 @@ h1, h2, h3 {
 /* ================= VIDEO LOGO (CIRCLE 350px) ================= */
 
 .logo-wrap {
-  width: 500px;          /* ⬆ CIRCLE SIZE */
-  height: 500px;         /* ⬆ CIRCLE SIZE */
-  margin-bottom: 65px;
+  width: 5000px;          /* ⬆ CIRCLE SIZE */
+  height: 5000px;         /* ⬆ CIRCLE SIZE */
+  margin-bottom: 55px;
 
   border-radius: 50%;
   overflow: hidden;
@@ -239,4 +239,5 @@ footer .small {
     font-size: 2.4rem;
   }
 }
+
 
