@@ -281,4 +281,12 @@ footer .small {
   .hero h1 {
     font-size: 2.4rem;
   }
+  @media (max-width: 768px) {
+  .logo-wrap {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 30px;
+  }
 }
+}
+
