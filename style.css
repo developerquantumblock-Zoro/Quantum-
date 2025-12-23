@@ -45,7 +45,7 @@ h1, h2, h3 {
   gap: 20px;
 }
 
-/* ================= VIDEO LOGO (INNER CORE ONLY – 240%) ================= */
+/* ================= VIDEO LOGO (PERFECT FIT) ================= */
 
 .logo-wrap {
   width: 160px;
@@ -64,12 +64,11 @@ h1, h2, h3 {
     0 0 70px rgba(0,229,255,0.3);
 }
 
-/* 🔥 VIDEO ZOOMED TO 240% */
+/* ✅ Video fits the circle exactly */
 .logo-video {
-  width: 240%;
-  height: 240%;
-  object-fit: cover;
-  transform: translate(-70%, -70%);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* ================= BUTTONS ================= */
@@ -79,7 +78,6 @@ h1, h2, h3 {
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
-  justify-content: center;
 }
 
 .primary {
@@ -231,11 +229,11 @@ footer .small {
     margin-bottom: 35px;
   }
 
-  /* 🔥 Mobile zoom slightly stronger */
+  /* Same perfect fit on mobile */
   .logo-video {
-    width: 260%;
-    height: 260%;
-    transform: translate(-80%, -80%);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   .hero h1 {
