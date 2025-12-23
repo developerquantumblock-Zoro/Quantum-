@@ -45,53 +45,58 @@ h1, h2, h3 {
   gap: 20px;
 }
 
-/* ================= VIDEO LOGO SYSTEM ================= */
+/* ================= VIDEO LOGO (CIRCULAR CORE) ================= */
 
 .logo-wrap {
   position: relative;
-  width: 160px;
-  height: 160px;
-  margin-bottom: 50px;
-
+  width: 140px;
+  height: 140px;
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Video logo */
-.logo-video {
-  width: 92px;
-  height: 92px;
-  object-fit: contain;
-  border-radius: 50%;
-  z-index: 2;
-
-  filter:
-    drop-shadow(0 0 25px rgba(0,229,255,0.45))
-    drop-shadow(0 0 50px rgba(0,229,255,0.25));
-}
-
-/* Quantum halo ring */
+/* Outer quantum ring */
 .logo-orbit {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   border-radius: 50%;
-
   border: 1px solid rgba(0,229,255,0.35);
 
-  background:
-    radial-gradient(circle at center,
-      rgba(0,229,255,0.12),
-      rgba(0,229,255,0.04),
-      transparent 70%
-    );
+  background: radial-gradient(
+    circle at center,
+    rgba(0,229,255,0.12),
+    rgba(0,229,255,0.04),
+    transparent 70%
+  );
 
   box-shadow:
-    0 0 45px rgba(0,229,255,0.25),
-    inset 0 0 35px rgba(0,229,255,0.15);
+    0 0 35px rgba(0,229,255,0.25),
+    inset 0 0 30px rgba(0,229,255,0.15);
 
   animation: orbitPulse 6s ease-in-out infinite;
+}
+
+/* Inner circular video mask */
+.logo-core {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+  background: #02040a;
+
+  box-shadow:
+    0 0 20px rgba(0,229,255,0.45),
+    0 0 40px rgba(0,229,255,0.25);
+}
+
+/* ✅ FIXED: Video fits perfectly inside the circle */
+.logo-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* Halo pulse */
@@ -259,22 +264,21 @@ footer .small {
   margin-top: 10px;
 }
 
-/* ================= MOBILE LOGO OPTIMIZATION ================= */
+/* ================= MOBILE OPTIMIZATION ================= */
 
 @media (max-width: 768px) {
   .logo-wrap {
-    width: 130px;
-    height: 130px;
-    margin-bottom: 35px;
+    width: 110px;
+    height: 110px;
+    margin-bottom: 30px;
   }
 
-  .logo-video {
-    width: 75px;
-    height: 75px;
+  .logo-core {
+    width: 52px;
+    height: 52px;
   }
 
   .hero h1 {
     font-size: 2.4rem;
   }
 }
-
