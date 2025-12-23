@@ -45,12 +45,12 @@ h1, h2, h3 {
   gap: 20px;
 }
 
-/* ================= VIDEO LOGO (INNER CORE ONLY – INCREASED) ================= */
+/* ================= VIDEO LOGO (INNER CORE ONLY – BIGGER CIRCLE) ================= */
 
 .logo-wrap {
-  width: 120px;        /* ⬆ increased */
-  height: 120px;       /* ⬆ increased */
-  margin-bottom: 45px; /* better spacing */
+  width: 160px;        /* ⬆ BIGGER */
+  height: 160px;       /* ⬆ BIGGER */
+  margin-bottom: 55px;
 
   border-radius: 50%;
   overflow: hidden;
@@ -60,11 +60,11 @@ h1, h2, h3 {
   justify-content: center;
 
   box-shadow:
-    0 0 25px rgba(0,229,255,0.4),
-    0 0 55px rgba(0,229,255,0.25);
+    0 0 30px rgba(0,229,255,0.45),
+    0 0 70px rgba(0,229,255,0.3);
 }
 
-/* Crop stays the same so outer ring stays hidden */
+/* Crop stays the same so outer ring remains hidden */
 .logo-video {
   width: 140%;
   height: 140%;
@@ -225,9 +225,9 @@ footer .small {
 
 @media (max-width: 768px) {
   .logo-wrap {
-    width: 96px;       /* ⬆ increased */
-    height: 96px;      /* ⬆ increased */
-    margin-bottom: 30px;
+    width: 120px;       /* ⬆ BIGGER ON MOBILE */
+    height: 120px;      /* ⬆ BIGGER ON MOBILE */
+    margin-bottom: 35px;
   }
 
   .logo-video {
